@@ -1,0 +1,248 @@
+{
+	"name": "PunchMeInTheFace - Red Comments",
+	"author": "Tashrif Sanil",
+	"variables": {
+		// Define variables here
+        "orange": "#F8A654",
+        "purple": "#9448A1",
+        "red": "#FF0000",
+        "lightblue": "#3E999F",
+        "blue": "#2A7D9F",
+        "cyan": "#00FFFF",
+        "lightteal": "#CAE8E2",
+        "teal": "#70C0B1",
+        "green": "#79D342",
+		"rawwhite": "#FFFFFF",
+		"white": "#F9F9F9",
+		"lightgrey": "#748096",
+		"altgrey": "#70807B",
+		"midgrey": "#677387",
+		"darkgrey": "#47515D",
+		"selectioncolor": "#424242",
+        "editorBackground": "#0f0f0f",
+		"black": "#000000",
+	},
+	"globals": {
+		"foreground": "var(white)",
+		"background": "var(editorBackground)",
+
+		"selection": "var(selectioncolor)",
+		"caret": "var(rawwhite)",
+		"gutter": "var(editorBackground)",
+		"gutter_foreground": "var(white)",
+
+		"line_highlight": "var(darkgrey)",
+	},
+	"rules": [
+		// String
+		{
+			"scope": "string",
+			"foreground": "var(orange)",
+		},
+		// Function name
+		{
+			"scope": "entity.name.function",
+			"foreground": "var(midgrey)",
+			"font_style": "bold",
+		},
+		// Function parameters
+		{
+			"name": "Function parameters",
+			"scope": "variable.parameter",
+			"foreground": "var(cyan)",
+			"font_style": "bold",
+		},
+		// Storage i.e. types e.g. var, int, bool etc.
+		{
+			// We're also going to colorize the extends keyword
+			"scope": "storage.type, storage.modifier.extends",
+			"foreground": "var(purple)",
+		},
+		// Storage modifiers e.g. static
+		{
+			"scope": "storage.modifier",
+			"foreground": "var(blue)",
+		},
+		// Function calls made inside functions
+		{
+			"scope": "meta.function-call variable.function",
+			"foreground": "var(lightgrey)",
+		},
+		// Reserved variables e.g. this, self, super
+		{
+			"scope": "variable.language",
+			"foreground": "var(blue)",
+		},
+		// Comments
+		{
+			"scope": "comment",
+			"foreground": "var(red)",
+			"font_style": "italic",
+		},
+		// Operators e.g. ==, !=, : etc.
+		{
+			"scope": "keyword.operator",
+			"foreground": "var(red)",
+		},
+		// Arithmetic operators
+		{
+			// overrides previous keyword.operator and affects arithmetic aspect
+			"scope": "keyword.operator.arithmetic",
+				"foreground": "lime",
+				"font_style": "bold",
+		},
+		// Keywords e.g. if, else etc.
+		{
+			"scope": "keyword.control",
+			"foreground": "var(orange)",
+		},
+		// Support refers to Library/Framework related stuff
+		// Support class
+		{
+			"scope": "support.class",
+			"font_style": "bold",
+		},
+		// Constants
+		{
+			"scope": "constant.language, constant.numeric",
+			"foreground": "var(teal)",
+		},
+		// Inherited class
+		{
+			"scope": "entity.other.inherited-class",
+			"foreground": "var(midgrey)",
+		},
+		// Tags e.gs are html tags
+		{
+			"scope": "meta.tag",
+			"foreground": "var(midgrey)",
+		},
+		// Tag punctuation e.g. the < and > on html tags
+		{
+			"scope": "punctuation.definition.tag.begin",
+			"foreground": "var(teal)",
+		},
+		{
+			"scope": "punctuation.definition.tag.end",
+			"foreground": "var(teal)",
+		},
+		// Import 
+		// C/C++ import statements
+		{
+			"scope": "keyword.control.import",
+			"foreground": "var(blue)",
+		},
+
+		// Javasript Section 
+		{
+			// For console.log 
+			"scope": "source.js support.type.object.console.js, source.tsx support.class.console.tsx",
+			"foreground": "var(midgrey)",
+			"font_style": "bold",
+		},
+		{
+			"scope": "source.js meta.function-call.method support.function.console.js, source.tsx support.function.console.tsx",
+			"foreground": "var(blue)",
+		},
+		// Support built in functions
+		{
+			"scope": "support.class.builtin",
+			"foreground": "var(green)",
+			"font_style": "bold italic",
+		},
+
+		// Typescript React section
+		// Typescript class and module names
+		{
+			// Typescript class and module names
+			"scope": "source.tsx meta.class.tsx entity.name.type.class.tsx, source.tsx meta.class.tsx entity.name.type.module.tsx",
+			"font_style": "bold",
+		},
+		{
+			// for type parameters i.e. things in between <>
+			// e.g. component<props, state>
+			"scope": "source.tsx meta.class.tsx meta.type.parameters.tsx entity.name.type.tsx",
+			"foreground": "var(lightblue)",
+			// "foreground": "royalblue",
+			"font_style": "bold",
+		},
+		// Typescript primitive types e.g. string, boolean
+		{
+			"scope": "source.tsx meta.interface.tsx meta.field.declaration.tsx meta.type.annotation.tsx support.type.primitive.tsx",
+			"foreground": "var(teal)",
+		},
+		// Typescript other types 
+		{
+			"scope": "source.tsx meta.class.tsx meta.field.declaration.tsx meta.arrow.tsx meta.block.tsx meta.block.tsx meta.objectliteral.tsx meta.object.member.tsx variable.other.readwrite.tsx",
+			"foreground": "silver",
+		},
+		// Typescript interface and state variables
+		{
+			// For state variables and interfaces variables
+			"scope": "source.tsx meta.field.declaration.tsx meta.definition.property.tsx variable.object.property.tsx, source.tsx meta.class.tsx meta.method.declaration.tsx meta.block.tsx meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx, source.tsx meta.class.tsx meta.field.declaration.tsx meta.arrow.tsx meta.block.tsx meta.block.tsx meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx",
+			"foreground": "var(lightteal)",
+			"font_style": "bold italic",
+		},
+		// Typescript function parameter type declaration
+		{
+			"scope": "source.tsx meta.class.tsx meta.method.declaration.tsx meta.parameters.tsx meta.type.annotation.tsx entity.name.type.tsx",
+			// "foreground": "slateblue",
+			// "foreground": "royalblue",
+			"font_style": "bold",
+		},
+		// Typescript html component attributes
+		{
+			"scope": "source.tsx meta.class.tsx meta.method.declaration.tsx meta.block.tsx meta.tag.tsx meta.tag.attributes.tsx entity.other.attribute-name",
+			"foreground": "var(lightteal)",
+		},
+
+
+		// C++ specific settings
+		// C++ function parameter types
+		{
+			// Function parameter types
+			"scope": "source.c++ meta.function.parameters.c++ meta.group.c++ storage.type.c",
+			// "scope": "source.c++ meta.function.parameters.c++ meta.group.c++ storage.type.c",
+			"foreground": "fuchsia",
+		},
+		// Accessors
+		{
+			// Accessors examples are e.g. ::,->
+			"scope": "source.c++ punctuation.accessor",
+			"foreground": "var(red)",
+			"font_style": "bold",
+		},
+
+
+		// JSON specific settings
+		{
+			"scope": "source.json string",
+			"foreground": "var(blue)",
+		},
+		{
+			"scope": "source.json punctuation.separator",
+			"foreground": "var(red)"
+		},
+		// JSON Color sublime specific
+		// Color sublime keyword
+		{
+			"scope": "source.json.sublime.color-scheme meta.color-scheme.collection.sublime-color-scheme meta.mapping.value.json meta.rules.collection.sublime-color-scheme meta.sequence.json meta.rule.sublime-color-scheme meta.mapping.key.json meta.rule-key.sublime-color-scheme string.quoted.double.json keyword.other.rule.sublime-color-scheme",
+			"foreground": "var(cyan)",
+		},
+		{
+			"scope": "source.json.sublime.color-scheme meta.color-scheme.collection.sublime-color-scheme meta.mapping.value.json meta.rules.collection.sublime-color-scheme meta.sequence.json meta.rule.sublime-color-scheme meta.mapping.value.json string.quoted.double.json meta.color.sublime-color-scheme source.css-color meta.function-call.var.sublime-color-scheme support.function.var.sublime-color-scheme",
+			"foreground": "fuchsia",
+		},
+		{
+			"scope": "source.json.sublime.color-scheme meta.color-scheme.collection.sublime-color-scheme meta.mapping.value.json meta.rules.collection.sublime-color-scheme meta.sequence.json meta.rule.sublime-color-scheme meta.mapping.value.json string.quoted.double.json meta.color.sublime-color-scheme source.css-color meta.function-call.var.sublime-color-scheme meta.group.sublime-color-scheme variable.other.color-scheme",
+			"foreground": "var(orange)",
+		},
+
+		// Python specific 
+		// python function parameter type
+		{
+			"scope": "source.python meta.function.parameters.annotation.python meta.qualified-name.python support.type.python",
+			"foreground": "fuchsia",
+		},
+	]
+}

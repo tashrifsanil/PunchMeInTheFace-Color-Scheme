@@ -1,0 +1,568 @@
+{
+	"name": "Adolfing Fuhrer Comments",
+	"author": "Tashrif Sanil",
+	"variables": {
+		// Define variables here
+        "orange": "#F8A654",
+        "purple": "#9448A1",
+        "red": "#FF0000",
+        "lightblue": "#3E999F",
+        "blue": "#2A7D9F",
+        "cyan": "#00FFFF",
+        "lightteal": "#CAE8E2",
+        "teal": "#70C0B1",
+        "green": "#79D342",
+		"rawwhite": "#FFFFFF",
+		"white": "#F9F9F9",
+		"lightgrey": "#748096",
+		"altgrey": "#70807B",
+		"midgrey": "#677387",
+		"darkgrey": "#47515D",
+		"selectioncolor": "#424242",
+        "editorBackground": "#0f0f0f",
+		"black": "#000000",
+	},
+	"globals": {
+		"foreground": "var(white)",
+		"background": "var(editorBackground)",
+
+		"selection": "var(selectioncolor)",
+		"caret": "var(rawwhite)",
+		"gutter": "var(editorBackground)",
+		"gutter_foreground": "var(white)",
+
+		"line_highlight": "var(darkgrey)",
+	},
+	"rules": [
+		{
+			"scope": "col_F5F5F5FF",
+			"foreground": "#757575FF",
+			"background": "#F5F5F5FF"
+		},
+		{
+			"scope": "col_9C9C9CFF",
+			"foreground": "#1C1C1CFF",
+			"background": "#9C9C9CFF"
+		},
+		{
+			"scope": "col_E7E7E7FF",
+			"foreground": "#676767FF",
+			"background": "#E7E7E7FF"
+		},
+		{
+			"scope": "col_292929FF",
+			"foreground": "#A9A9A9FF",
+			"background": "#292929FF"
+		},
+		{
+			"foreground": "#272727FF",
+			"background": "#A7A7A7FF",
+			"scope": "col_A7A7A7FF"
+		},
+		{
+			"foreground": "#FEFEFEFF",
+			"background": "#7E7E7EFF",
+			"scope": "col_7E7E7EFF"
+		},
+		{
+			"foreground": "#5E5E5EFF",
+			"background": "#DEDEDEFF",
+			"scope": "col_DEDEDEFF"
+		},
+		{
+			"foreground": "#E7E7E7FF",
+			"background": "#676767FF",
+			"scope": "col_676767FF"
+		},
+		{
+			"foreground": "#FAFAFAFF",
+			"background": "#7A7A7AFF",
+			"scope": "col_7A7A7AFF"
+		},
+		{
+			"foreground": "#292929FF",
+			"background": "#A9A9A9FF",
+			"scope": "col_A9A9A9FF"
+		},
+		{
+			"foreground": "#323232FF",
+			"background": "#B2B2B2FF",
+			"scope": "col_B2B2B2FF"
+		},
+		{
+			"foreground": "#CFCFCFFF",
+			"background": "#4F4F4FFF",
+			"scope": "col_4F4F4FFF"
+		},
+		{
+			"foreground": "#353535FF",
+			"background": "#B5B5B5FF",
+			"scope": "col_B5B5B5FF"
+		},
+		{
+			"foreground": "#E8E8E8FF",
+			"background": "#686868FF",
+			"scope": "col_686868FF"
+		},
+		{
+			"foreground": "#F5F5F5FF",
+			"background": "#757575FF",
+			"scope": "col_757575FF"
+		},
+		{
+			"foreground": "#F1F1F1FF",
+			"background": "#717171FF",
+			"scope": "col_717171FF"
+		},
+		{
+			"foreground": "#262626FF",
+			"background": "#A6A6A6FF",
+			"scope": "col_A6A6A6FF"
+		},
+		{
+			"foreground": "#9C9C9CFF",
+			"background": "#1C1C1CFF",
+			"scope": "col_1C1C1CFF"
+		},
+		{
+			"foreground": "#757575FF",
+			"background": "#FDF6E3FF",
+			"scope": "col_FDF6E3FF"
+		},
+		{
+			"foreground": "#E8E8E8FF",
+			"background": "#586E75FF",
+			"scope": "col_586E75FF"
+		},
+		{
+			"foreground": "#A9A9A9FF",
+			"background": "#073642FF",
+			"scope": "col_073642FF"
+		},
+		{
+			"foreground": "#1C1C1CFF",
+			"background": "#93A1A1FF",
+			"scope": "col_93A1A1FF"
+		},
+		{
+			"foreground": "#676767FF",
+			"background": "#EEE8D5FF",
+			"scope": "col_EEE8D5FF"
+		},
+		{
+			"foreground": "#7E7E7EFF",
+			"background": "#FEFEFEFF",
+			"scope": "col_FEFEFEFF"
+		},
+		{
+			"foreground": "#B5B5B5FF",
+			"background": "#353535FF",
+			"scope": "col_353535FF"
+		},
+		{
+			"foreground": "#B2B2B2FF",
+			"background": "#323232FF",
+			"scope": "col_323232FF"
+		},
+		{
+			"foreground": "#A6A6A6FF",
+			"background": "#262626FF",
+			"scope": "col_262626FF"
+		},
+		{
+			"foreground": "#CCCCCCFF",
+			"background": "#4C4C4CFF",
+			"scope": "col_4C4C4CFF"
+		},
+		{
+			"foreground": "#717171FF",
+			"background": "#F1F1F1FF",
+			"scope": "col_F1F1F1FF"
+		},
+		{
+			"foreground": "#232323FF",
+			"background": "#A3A3A3FF",
+			"scope": "col_A3A3A3FF"
+		},
+		{
+			"foreground": "#DEDEDEFF",
+			"background": "#5E5E5EFF",
+			"scope": "col_5E5E5EFF"
+		},
+		{
+			"foreground": "#424242FF",
+			"background": "#C2C2C2FF",
+			"scope": "col_C2C2C2FF"
+		},
+		{
+			"foreground": "#F9F9F9FF",
+			"background": "#797979FF",
+			"scope": "col_797979FF"
+		},
+		{
+			"foreground": "#A7A7A7FF",
+			"background": "#272727FF",
+			"scope": "col_272727FF"
+		},
+		{
+			"foreground": "#7A7A7AFF",
+			"background": "#FAFAFAFF",
+			"scope": "col_FAFAFAFF"
+		},
+		{
+			"foreground": "#4F4F4FFF",
+			"background": "#CFCFCFFF",
+			"scope": "col_CFCFCFFF"
+		},
+		{
+			"foreground": "#0E0E0EFF",
+			"background": "#8E8E8EFF",
+			"scope": "col_8E8E8EFF"
+		},
+		{
+			"foreground": "#686868FF",
+			"background": "#E8E8E8FF",
+			"scope": "col_E8E8E8FF"
+		},
+		{
+			"foreground": "#272727FF",
+			"background": "#79D342FF",
+			"scope": "col_79D342FF"
+		},
+		{
+			"foreground": "#8E8E8EFF",
+			"background": "#0E0E0EFF",
+			"scope": "col_0E0E0EFF"
+		},
+		{
+			"foreground": "#FEFEFEFF",
+			"background": "#748096FF",
+			"scope": "col_748096FF"
+		},
+		{
+			"foreground": "#CFCFCFFF",
+			"background": "#47515DFF",
+			"scope": "col_47515DFF"
+		},
+		{
+			"foreground": "#A3A3A3FF",
+			"background": "#232323FF",
+			"scope": "col_232323FF"
+		},
+		{
+			"foreground": "#797979FF",
+			"background": "#F9F9F9FF",
+			"scope": "col_F9F9F9FF"
+		},
+		{
+			"foreground": "#F1F1F1FF",
+			"background": "#677387FF",
+			"scope": "col_677387FF"
+		},
+		{
+			"foreground": "#353535FF",
+			"background": "#F8A654FF",
+			"scope": "col_F8A654FF"
+		},
+		{
+			"foreground": "#C2C2C2FF",
+			"background": "#424242FF",
+			"scope": "col_424242FF"
+		},
+		{
+			"foreground": "#E8E8E8FF",
+			"background": "#2A7D9FFF",
+			"scope": "col_2A7D9FFF"
+		},
+		{
+			"foreground": "#000000FF",
+			"background": "#808080FF",
+			"scope": "col_808080FF"
+		},
+		{
+			"foreground": "#5E5E5EFF",
+			"background": "#CAE8E2FF",
+			"scope": "col_CAE8E2FF"
+		},
+		{
+			"foreground": "#FEFEFEFF",
+			"background": "#3E999FFF",
+			"scope": "col_3E999FFF"
+		},
+		{
+			"foreground": "#FFFFFFFF",
+			"background": "#7F7F7FFF",
+			"scope": "col_7F7F7FFF"
+		},
+		{
+			"foreground": "#FAFAFAFF",
+			"background": "#70807BFF",
+			"scope": "col_70807BFF"
+		},
+		{
+			"foreground": "#262626FF",
+			"background": "#70C0B1FF",
+			"scope": "col_70C0B1FF"
+		},
+		{
+			"foreground": "#E8E8E8FF",
+			"background": "#9448A1FF",
+			"scope": "col_9448A1FF"
+		},
+		{
+			"foreground": "#2D2D2DFF",
+			"background": "#ADADADFF",
+			"scope": "col_ADADADFF"
+		},
+		{
+			"foreground": "#323232FF",
+			"background": "#00FFFFFF",
+			"scope": "col_00FFFFFF"
+		},
+		{
+			"foreground": "#4C4C4CFF",
+			"background": "#CCCCCCFF",
+			"scope": "col_CCCCCCFF"
+		},
+		{
+			"background": "#FF0000FF",
+			"scope": "col_FF0000FF",
+			"foreground": "#CCCCCCFF"
+		},
+		{
+			"foreground": "#7F7F7FFF",
+			"background": "#FFFFFFFF",
+			"scope": "col_FFFFFFFF"
+		},
+		{
+			"foreground": "#808080FF",
+			"background": "#000000FF",
+			"scope": "col_000000FF"
+		},
+		{
+			"background": "#000000",
+			"scope": "col_gutter",
+			"foreground": "#ffffff"
+		},
+		{
+			"background": "#2D2D2DFF",
+			"scope": "col_2D2D2DFF",
+			"foreground": "#ADADADFF"
+		},
+		{
+			"background": "#36D7B7FF",
+			"scope": "col_36D7B7FF",
+			"foreground": "#232323FF"
+		},
+		// String
+		{
+			"scope": "string",
+			"foreground": "var(orange)",
+		},
+		// Function name
+		{
+			"scope": "entity.name.function",
+			"foreground": "var(midgrey)",
+			"font_style": "bold",
+		},
+		// Function parameters
+		{
+			"name": "Function parameters",
+			"scope": "variable.parameter",
+			"foreground": "var(cyan)",
+			"font_style": "bold",
+		},
+		// Storage i.e. types e.g. var, int, bool etc.
+		{
+			// We're also going to colorize the extends keyword
+			"scope": "storage.type, storage.modifier.extends",
+			"foreground": "var(purple)",
+		},
+		// Storage modifiers e.g. static
+		{
+			"scope": "storage.modifier",
+			"foreground": "var(blue)",
+		},
+		// Function calls made inside functions
+		{
+			"scope": "meta.function-call variable.function",
+			"foreground": "var(lightgrey)",
+		},
+		// Reserved variables e.g. this, self, super
+		{
+			"scope": "variable.language",
+			"foreground": "var(blue)",
+		},
+		// Comments
+		{
+			"scope": "comment",
+			"foreground": "var(red)",
+			"font_style": "italic",
+		},
+		// Operators e.g. ==, !=, : etc.
+		{
+			"scope": "keyword.operator",
+			"foreground": "var(red)",
+		},
+		// Arithmetic operators
+		{
+			// overrides previous keyword.operator and affects arithmetic aspect
+			"scope": "keyword.operator.arithmetic",
+				"foreground": "lime",
+				"font_style": "bold",
+		},
+		// Keywords e.g. if, else etc.
+		{
+			"scope": "keyword.control",
+			"foreground": "var(orange)",
+		},
+		// Support refers to Library/Framework related stuff
+		// Support class
+		{
+			"scope": "support.class",
+			"font_style": "bold",
+		},
+		// Constants
+		{
+			"scope": "constant.language, constant.numeric",
+			"foreground": "var(teal)",
+		},
+		// Inherited class
+		{
+			"scope": "entity.other.inherited-class",
+			"foreground": "var(midgrey)",
+		},
+		// Tags e.gs are html tags
+		{
+			"scope": "meta.tag",
+			"foreground": "var(midgrey)",
+		},
+		// Tag punctuation e.g. the < and > on html tags
+		{
+			"scope": "punctuation.definition.tag.begin",
+			"foreground": "var(teal)",
+		},
+		{
+			"scope": "punctuation.definition.tag.end",
+			"foreground": "var(teal)",
+		},
+		// Import 
+		// C/C++ import statements
+		{
+			"scope": "keyword.control.import",
+			"foreground": "var(blue)",
+		},
+
+		// Javasript Section 
+		{
+			// For console.log 
+			"scope": "source.js support.type.object.console.js, source.tsx support.class.console.tsx",
+			"foreground": "var(midgrey)",
+			"font_style": "bold",
+		},
+		{
+			"scope": "source.js meta.function-call.method support.function.console.js, source.tsx support.function.console.tsx",
+			"foreground": "var(blue)",
+		},
+		// Support built in functions
+		{
+			"scope": "support.class.builtin",
+			"foreground": "var(green)",
+			"font_style": "bold italic",
+		},
+
+		// Typescript React section
+		// Typescript class and module names
+		{
+			// Typescript class and module names
+			"scope": "source.tsx meta.class.tsx entity.name.type.class.tsx, source.tsx meta.class.tsx entity.name.type.module.tsx",
+			"font_style": "bold",
+		},
+		{
+			// for type parameters i.e. things in between <>
+			// e.g. component<props, state>
+			"scope": "source.tsx meta.class.tsx meta.type.parameters.tsx entity.name.type.tsx",
+			// "foreground": "var(lightblue)",
+			"foreground": "fuchsia",
+			"font_style": "bold",
+		},
+		// Typescript primitive types e.g. string, boolean
+		{
+			"scope": "source.tsx meta.interface.tsx meta.field.declaration.tsx meta.type.annotation.tsx support.type.primitive.tsx",
+			"foreground": "var(teal)",
+		},
+		// Typescript other types 
+		{
+			"scope": "source.tsx meta.class.tsx meta.field.declaration.tsx meta.arrow.tsx meta.block.tsx meta.block.tsx meta.objectliteral.tsx meta.object.member.tsx variable.other.readwrite.tsx",
+			"foreground": "silver",
+		},
+		// Typescript interface and state variables
+		{
+			// For state variables and interfaces variables
+			"scope": "source.tsx meta.field.declaration.tsx meta.definition.property.tsx variable.object.property.tsx, source.tsx meta.class.tsx meta.method.declaration.tsx meta.block.tsx meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx, source.tsx meta.class.tsx meta.field.declaration.tsx meta.arrow.tsx meta.block.tsx meta.block.tsx meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx",
+			"foreground": "var(lightteal)",
+			"font_style": "bold italic",
+		},
+		// Typescript function parameter type declaration
+		{
+			"scope": "source.tsx meta.class.tsx meta.method.declaration.tsx meta.parameters.tsx meta.type.annotation.tsx entity.name.type.tsx",
+			// "foreground": "slateblue",
+			// "foreground": "royalblue",
+			"font_style": "bold",
+		},
+		// Typescript html component attributes
+		{
+			"scope": "source.tsx meta.class.tsx meta.method.declaration.tsx meta.block.tsx meta.tag.tsx meta.tag.attributes.tsx entity.other.attribute-name",
+			"foreground": "var(lightteal)",
+		},
+
+
+		// C++ specific settings
+		// C++ function parameter types
+		{
+			// Function parameter types
+			"scope": "source.c++ meta.function.parameters.c++ meta.group.c++ storage.type.c",
+			// "scope": "source.c++ meta.function.parameters.c++ meta.group.c++ storage.type.c",
+			"foreground": "fuchsia",
+		},
+		// Accessors
+		{
+			// Accessors examples are e.g. ::,->
+			"scope": "source.c++ punctuation.accessor",
+			"foreground": "var(red)",
+			"font_style": "bold",
+		},
+
+
+		// JSON specific settings
+		{
+			"scope": "source.json string",
+			"foreground": "var(blue)",
+		},
+		{
+			"scope": "source.json punctuation.separator",
+			"foreground": "var(red)"
+		},
+		// JSON Color sublime specific
+		// Color sublime keyword
+		{
+			"scope": "source.json.sublime.color-scheme meta.color-scheme.collection.sublime-color-scheme meta.mapping.value.json meta.rules.collection.sublime-color-scheme meta.sequence.json meta.rule.sublime-color-scheme meta.mapping.key.json meta.rule-key.sublime-color-scheme string.quoted.double.json keyword.other.rule.sublime-color-scheme",
+			"foreground": "var(cyan)",
+		},
+		{
+			"scope": "source.json.sublime.color-scheme meta.color-scheme.collection.sublime-color-scheme meta.mapping.value.json meta.rules.collection.sublime-color-scheme meta.sequence.json meta.rule.sublime-color-scheme meta.mapping.value.json string.quoted.double.json meta.color.sublime-color-scheme source.css-color meta.function-call.var.sublime-color-scheme support.function.var.sublime-color-scheme",
+			"foreground": "fuchsia",
+		},
+		{
+			"scope": "source.json.sublime.color-scheme meta.color-scheme.collection.sublime-color-scheme meta.mapping.value.json meta.rules.collection.sublime-color-scheme meta.sequence.json meta.rule.sublime-color-scheme meta.mapping.value.json string.quoted.double.json meta.color.sublime-color-scheme source.css-color meta.function-call.var.sublime-color-scheme meta.group.sublime-color-scheme variable.other.color-scheme",
+			"foreground": "var(orange)",
+		},
+
+		// Python specific 
+		// python function parameter type
+		{
+			"scope": "source.python meta.function.parameters.annotation.python meta.qualified-name.python support.type.python",
+			"foreground": "fuchsia",
+		},
+	]
+}
