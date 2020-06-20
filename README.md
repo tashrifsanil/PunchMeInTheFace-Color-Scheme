@@ -67,6 +67,9 @@ I haven't really found a good UI to go along with this theme, but that being sai
 ]
 ```
 
+# Credits
+Special thanks to https://www.linkedin.com/in/thechristina/ for the theme name
+
 
 
 
