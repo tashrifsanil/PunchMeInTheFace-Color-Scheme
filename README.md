@@ -12,7 +12,7 @@
 
 ## - Automatic
 
-> Coming soon to [Package Control](https://packagecontrol.io/packages/) 
+> You can now install the theme via package control https://packagecontrol.io/packages/PunchMeInTheFace%20Color%20Scheme
 
 # Screenshots
 The theme on Typescript React, C/C++ projects
